@@ -4,9 +4,11 @@ COPY container-files /
 
 # Layer: py-vpoller
 RUN \
-    yum clean all && \
-    yum install -y nano python34 gcc gcc-c++ glib* automake autoconf libtool python34-devel git psmisc && \
+    chmod +x /config/vpoller-bootstrap.sh /usr/local/bin/zabbix-vsphere-import && \
+    yum -y update && \
+    yum install -y nano python34 gcc gcc-c++ glib* automake autoconf libtool python34-devel git psmisc cronie && \
   	yum groupinstall -y "development tools" && \
+    yum clean all && \
     curl https://bootstrap.pypa.io/get-pip.py | python3.4 && \
     pip3 install vpoller pyyaml pyzabbix && \
     mkdir -p /var/run/vpoller /var/log/vpoller /var/lib/vconnector /var/log/vconnector && \
@@ -41,7 +43,5 @@ RUN \
     export ZS_LoadModule=vpoller.so && \
     rm -Rf zabbix-${ZABBIX_SF_VERSION} zabbix-${ZABBIX_SF_VERSION}.tar.gz
 
-RUN \
-    chmod +x /config/vpoller-bootstrap.sh
 
 CMD ["/config/vpoller-bootstrap.sh"]
