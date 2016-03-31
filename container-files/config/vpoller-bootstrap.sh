@@ -8,6 +8,7 @@ vconnector-cli -H ${VS_HOST} enable
 
 if [ -f /config/vsphere-import.yaml ]; then
   echo "*/15 * * * * /usr/local/bin/zabbix-vsphere-import -f /config/vsphere-import.yaml > /data/logs/vsphere-import.log" | crontab
+  /usr/local/bin/zabbix-vsphere-import -f /config/vsphere-import.yaml > /data/logs/vsphere-import.log
 fi
 
 # PUT EVERYTHING BEFORE THIS LINE
