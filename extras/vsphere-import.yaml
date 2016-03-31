@@ -8,7 +8,7 @@ vpoller:
   timeout: 3000
 
 zabbix:
-  hostname: http://zabbix.example.org/zabbix
+  hostname: http://localhost
   username: Admin
   password: zabbix
 
