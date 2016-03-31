@@ -42,4 +42,7 @@ RUN \
     cd /usr/local/src/ && \
     rm -Rf zabbix-${ZABBIX_SF_VERSION} zabbix-${ZABBIX_SF_VERSION}.tar.gz
 
+RUN \
+    chmod +x /config/vpoller-bootstrap.sh
+
 CMD ["/config/vpoller-bootstrap.sh"]
