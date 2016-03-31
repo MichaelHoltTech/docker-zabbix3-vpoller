@@ -2,13 +2,11 @@ FROM zabbix/zabbix-3.0:3.0.1
 
 COPY container-files /
 
-ENV \
-    ZS_LoadModule="vpoller.so"
-
 # Layer: py-vpoller
 RUN \
     yum clean all && \
-    yum install -y nano python34 gcc gcc-c++ automake autoconf libtool python34-devel git psmisc && \
+    yum install -y nano python34 gcc gcc-c++ glib* automake autoconf libtool python34-devel git psmisc && \
+  	yum groupinstall -y "development tools" && \
     curl https://bootstrap.pypa.io/get-pip.py | python3.4 && \
     pip3 install vpoller pyyaml pyzabbix && \
     mkdir -p /var/run/vpoller /var/log/vpoller /var/lib/vconnector /var/log/vconnector && \
@@ -40,6 +38,7 @@ RUN \
     make && \
     cp vpoller.so /usr/local/src/vpoller-module && \
     cd /usr/local/src/ && \
+    export ZS_LoadModule=vpoller.so && \
     rm -Rf zabbix-${ZABBIX_SF_VERSION} zabbix-${ZABBIX_SF_VERSION}.tar.gz
 
 RUN \
