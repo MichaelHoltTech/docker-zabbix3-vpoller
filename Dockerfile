@@ -31,7 +31,7 @@ RUN \
     rm -Rf extra && \
     export ZABBIX_SF_VERSION="$(echo ${ZABBIX_VERSION} | cut -d/ -f2)" && \
     cd /usr/local/src/ && \
-    curl -O -J -L https://sourceforge.net/projects/zabbix/files/ZABBIX%20Latest%20Stable/${ZABBIX_SF_VERSION}/zabbix-${ZABBIX_SF_VERSION}.tar.gz/download
+    curl -O -J -L https://sourceforge.net/projects/zabbix/files/ZABBIX%20Latest%20Stable/${ZABBIX_SF_VERSION}/zabbix-${ZABBIX_SF_VERSION}.tar.gz/download && \
     tar xvfz zabbix-${ZABBIX_SF_VERSION}.tar.gz && \
     cd zabbix-${ZABBIX_SF_VERSION} && \
     ./configure && \
