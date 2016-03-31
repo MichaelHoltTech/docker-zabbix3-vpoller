@@ -41,3 +41,5 @@ RUN \
     cp vpoller.so /usr/local/src/vpoller-module && \
     cd /usr/local/src/ && \
     rm -Rf zabbix-${ZABBIX_SF_VERSION} zabbix-${ZABBIX_SF_VERSION}.tar.gz
+
+CMD ["/config/vpoller-bootstrap.sh"]
