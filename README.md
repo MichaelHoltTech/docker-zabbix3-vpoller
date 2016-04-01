@@ -3,9 +3,6 @@ Zabbix3 with vPoller
 
 This container runs vPoller based off of the [Zabbix Github repo](https://github.com/zabbix/zabbix-community-docker)
 
-zabbix-3.0.1
-=================
-
 Compiled Zabbix with almost all features (MySQL support, Java, SNMP,
 Curl, IPMI, IPv6, Jabber, fping), vPoller Module and Zabbix web UI based on CentOS 7,
 Supervisor, Nginx, PHP. Image requires external MySQL/MariaDB database (you can
