@@ -4,9 +4,9 @@ COPY container-files /
 
 # Layer: py-vpoller
 RUN \
-    chmod +x /config/vpoller-bootstrap.sh /usr/local/bin/zabbix-vsphere-import && \
+    chmod +x /config/vpoller-bootstrap.sh /usr/local/bin/zabbix-vsphere-import /usr/local/bin/vsphere-import && \
     yum -y update && \
-    yum install -y nano python34 gcc gcc-c++ glib* automake autoconf libtool python34-devel git psmisc cronie && \
+    yum install -y nano python34 gcc gcc-c++ glib* automake autoconf libtool python34-devel git psmisc && \
   	yum groupinstall -y "development tools" && \
     yum clean all && \
     curl https://bootstrap.pypa.io/get-pip.py | python3.4 && \
