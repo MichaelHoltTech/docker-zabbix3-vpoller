@@ -1,6 +1,6 @@
 ---
 vsphere:
-  hostname: vc01.example.org
+  hostname: VS_HOST
 
 vpoller:
   endpoint: tcp://localhost:10123
@@ -8,15 +8,15 @@ vpoller:
   timeout: 3000
 
 zabbix:
-  hostname: http://localhost
-  username: Admin
-  password: zabbix
+  hostname: http://localhost/
+  username: ZB_UN
+  password: ZB_PW
 
   vsphere_object_datacenter:
     templates:
       - Template VMware vSphere Datacenter - vPoller Native
     macros:
-      VSPHERE.HOST: vc01.example.org
+      VSPHERE.HOST: VS_HOST
     groups:
       - Datacenters
 
@@ -24,7 +24,7 @@ zabbix:
     templates:
       - Template VMware vSphere Clusters - vPoller Native
     macros:
-      VSPHERE.HOST: vc01.example.org
+      VSPHERE.HOST: VS_HOST
     groups:
       - Clusters
 
@@ -32,7 +32,7 @@ zabbix:
     templates:
       - Template VMware vSphere Hypervisor - vPoller Native
     macros:
-      VSPHERE.HOST: vc01.example.org
+      VSPHERE.HOST: VS_HOST
     groups:
       - Hypervisors
 
@@ -40,7 +40,7 @@ zabbix:
     templates:
       - Template VMware vSphere Virtual Machine - vPoller Native
     macros:
-      VSPHERE.HOST: vc01.example.org
+      VSPHERE.HOST: VS_HOST
     groups:
       - Virtual Machines
 
@@ -48,6 +48,6 @@ zabbix:
     templates:
       - Template VMware vSphere Datastore - vPoller Native
     macros:
-      VSPHERE.HOST: vc01.example.org
+      VSPHERE.HOST: VS_HOST
     groups:
       - Datastores
