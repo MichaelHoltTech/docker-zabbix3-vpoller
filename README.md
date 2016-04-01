@@ -64,13 +64,13 @@ variables:
 
 ##### vPoller Variables
 
-| Variable | Default value | Required? | Notes |
+| Variable | Required? | Notes |
 | -------- | ------------- | --------- | ----- |
-| VS_HOST | | YES | vSphere URL |
-| VS_UN | | YES | vSphere username (Read-Only Access) |
-| VS_PW | | YES | vSphere Password |
-| ZB_UN | | OPTIONAL | Specify Zabbix UN for using the Auto-Import |
-| ZB_PW | | OPTIONAL | Specify Zabbix PW for using the Auto-Import |
+| VS_HOST | YES | vSphere URL |
+| VS_UN | YES | vSphere username (Read-Only Access) |
+| VS_PW | YES | vSphere Password |
+| ZB_UN | OPTIONAL | Specify Zabbix UN for using the Auto-Import |
+| ZB_PW | OPTIONAL | Specify Zabbix PW for using the Auto-Import |
 
 Specifying the ``ZB_UN`` and ``ZB_PW`` uses the process of [Importing vSphere objects as regular Zabbix hosts](http://vpoller.readthedocs.org/en/latest/vpoller-zabbix.html#importing-vsphere-objects-as-regular-zabbix-hosts).
 
