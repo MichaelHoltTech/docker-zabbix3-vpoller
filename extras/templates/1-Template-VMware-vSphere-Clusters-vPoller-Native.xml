@@ -33,7 +33,7 @@
                     <delay>30</delay>
                     <history>90</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -78,7 +78,7 @@
             <expression>{Template VMware vSphere Clusters - vPoller Native:vpoller[&quot;cluster.get&quot;, &quot;{$VSPHERE.HOST}&quot;, &quot;{HOST.HOST}&quot;, &quot;overallStatus&quot;, &quot;null&quot;].iregexp(red,5)}=1</expression>
             <name>Overall status of {HOST.NAME} is {ITEM.LASTVALUE}</name>
             <url/>
-            <status>1</status>
+            <status>0</status>
             <priority>0</priority>
             <description/>
             <type>0</type>

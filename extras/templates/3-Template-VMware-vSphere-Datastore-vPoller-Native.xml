@@ -38,7 +38,7 @@
                     <delay>5</delay>
                     <history>7</history>
                     <trends>30</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>B</units>
@@ -81,7 +81,7 @@
                     <delay>5</delay>
                     <history>7</history>
                     <trends>30</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>B</units>
@@ -124,7 +124,7 @@
                     <delay>5</delay>
                     <history>7</history>
                     <trends>30</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -167,7 +167,7 @@
                     <delay>5</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -210,7 +210,7 @@
                     <delay>5</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -253,7 +253,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>30</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>B</units>
@@ -296,7 +296,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>30</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>B</units>
@@ -339,7 +339,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -382,7 +382,7 @@
                     <delay>5</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -425,7 +425,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -468,7 +468,7 @@
                     <delay>5</delay>
                     <history>7</history>
                     <trends>30</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>B</units>
@@ -511,7 +511,7 @@
                     <delay>5</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -553,7 +553,7 @@
                     <snmp_oid/>
                     <key>vpoller[&quot;datastore.host.get&quot;, &quot;{$VSPHERE.HOST}&quot;, &quot;{HOST.NAME}&quot;, &quot;null&quot;, &quot;null&quot;]</key>
                     <delay>3600</delay>
-                    <status>1</status>
+                    <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
@@ -585,7 +585,7 @@
                             <delay>3600</delay>
                             <history>7</history>
                             <trends>365</trends>
-                            <status>1</status>
+                            <status>0</status>
                             <value_type>1</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -630,7 +630,7 @@
                     <snmp_oid/>
                     <key>vpoller[&quot;datastore.vm.get&quot;, &quot;{$VSPHERE.HOST}&quot;, &quot;{HOST.NAME}&quot;, &quot;null&quot;, &quot;null&quot;]</key>
                     <delay>3600</delay>
-                    <status>1</status>
+                    <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
@@ -662,7 +662,7 @@
                             <delay>3600</delay>
                             <history>7</history>
                             <trends>365</trends>
-                            <status>1</status>
+                            <status>0</status>
                             <value_type>1</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -711,7 +711,7 @@
             <expression>{Template VMware vSphere Datastore - vPoller Native:vpoller[&quot;datastore.get&quot;, &quot;{$VSPHERE.HOST}&quot;, &quot;{HOST.NAME}&quot;, &quot;summary.accessible&quot;, &quot;null&quot;].regexp(false,5)}=1</expression>
             <name>Datastore {HOST.HOST} is not accessible</name>
             <url/>
-            <status>1</status>
+            <status>0</status>
             <priority>2</priority>
             <description>Datastore {HOST.HOST} is not accessible&#13;
 &#13;
@@ -724,7 +724,7 @@ vSphere Host: {$VSPHERE.HOST}</description>
             <expression>{Template VMware vSphere Datastore - vPoller Native:vpoller[&quot;datastore.get&quot;, &quot;{$VSPHERE.HOST}&quot;, &quot;{HOST.NAME}&quot;, &quot;freeSpacePercentage&quot;, &quot;null&quot;].min(5)}&lt;20</expression>
             <name>Free space is less than 20% on datastore {HOST.HOST}</name>
             <url/>
-            <status>1</status>
+            <status>0</status>
             <priority>4</priority>
             <description>Free space is less than 20% on datastore {HOST.HOST}&#13;
 &#13;

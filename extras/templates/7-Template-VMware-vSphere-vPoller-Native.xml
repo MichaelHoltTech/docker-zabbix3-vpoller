@@ -59,7 +59,7 @@
                     <delay>60</delay>
                     <history>7</history>
                     <trends>30</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -102,7 +102,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>4</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -145,7 +145,7 @@
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>2</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -188,7 +188,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -231,7 +231,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -274,7 +274,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -317,7 +317,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -360,7 +360,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -402,7 +402,7 @@
                     <snmp_oid/>
                     <key>vpoller[&quot;cluster.discover&quot;, &quot;{HOST.HOST}&quot;, &quot;null&quot;, &quot;name&quot;, &quot;null&quot;]</key>
                     <delay>3600</delay>
-                    <status>1</status>
+                    <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
@@ -434,7 +434,7 @@
                             <delay>5</delay>
                             <history>7</history>
                             <trends>365</trends>
-                            <status>1</status>
+                            <status>0</status>
                             <value_type>1</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -473,7 +473,7 @@
                             <expression>{Template VMware vSphere - vPoller Native:vpoller[&quot;cluster.get&quot;, &quot;{HOST.HOST}&quot;, &quot;{#VSPHERE.CLUSTER.NAME}&quot;, &quot;overallStatus&quot;, &quot;null&quot;].iregexp(red,5)}=1</expression>
                             <name>Overall status of &quot;{#VSPHERE.CLUSTER.NAME}&quot; cluster is {ITEM.LASTVALUE}</name>
                             <url/>
-                            <status>1</status>
+                            <status>0</status>
                             <priority>4</priority>
                             <description>Overall status of &quot;{#VSPHERE.CLUSTER.NAME}&quot; cluster is {ITEM.LASTVALUE}&#13;
 &#13;
@@ -492,7 +492,7 @@ vSphere host: {$VSPHERE.HOST}</description>
                     <snmp_oid/>
                     <key>vpoller[&quot;datacenter.discover&quot;, &quot;{HOST.HOST}&quot;, &quot;null&quot;, &quot;name&quot;, &quot;null&quot;]</key>
                     <delay>3600</delay>
-                    <status>1</status>
+                    <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
@@ -524,7 +524,7 @@ vSphere host: {$VSPHERE.HOST}</description>
                             <delay>5</delay>
                             <history>7</history>
                             <trends>365</trends>
-                            <status>1</status>
+                            <status>0</status>
                             <value_type>1</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -565,7 +565,7 @@ vSphere host: {$VSPHERE.HOST}</description>
                             <expression>{Template VMware vSphere - vPoller Native:vpoller[&quot;datacenter.get&quot;, &quot;{HOST.HOST}&quot;, &quot;{#VSPHERE.DATACENTER.NAME}&quot;, &quot;overallStatus&quot;, &quot;null&quot;].iregexp(red,5)}=1</expression>
                             <name>Overall Status of &quot;{#VSPHERE.DATACENTER.NAME}&quot; is {ITEM.LASTVALUE}</name>
                             <url/>
-                            <status>1</status>
+                            <status>0</status>
                             <priority>4</priority>
                             <description>Overall status of &quot;{#VSPHERE.DATACENTER.NAME}&quot; datacenter is {ITEM.LASTVALUE}&#13;
 &#13;
@@ -579,7 +579,7 @@ vSphere host: {$VSPHERE.HOST}</description>
                         <host_prototype>
                             <host>{#VSPHERE.DATACENTER.NAME}</host>
                             <name>{#VSPHERE.DATACENTER.NAME}</name>
-                            <status>1</status>
+                            <status>0</status>
                             <group_links>
                                 <group_link>
                                     <group>
@@ -603,7 +603,7 @@ vSphere host: {$VSPHERE.HOST}</description>
                     <snmp_oid/>
                     <key>vpoller[&quot;datastore.discover&quot;, &quot;{HOST.HOST}&quot;, &quot;null&quot;, &quot;info.url&quot;, &quot;null&quot;]</key>
                     <delay>3600</delay>
-                    <status>1</status>
+                    <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
@@ -631,7 +631,7 @@ vSphere host: {$VSPHERE.HOST}</description>
                         <host_prototype>
                             <host>{#VSPHERE.DATASTORE.NAME}</host>
                             <name>{#VSPHERE.DATASTORE.INFO.URL}</name>
-                            <status>1</status>
+                            <status>0</status>
                             <group_links>
                                 <group_link>
                                     <group>
@@ -655,7 +655,7 @@ vSphere host: {$VSPHERE.HOST}</description>
                     <snmp_oid/>
                     <key>vpoller[&quot;host.discover&quot;, &quot;{HOST.HOST}&quot;, &quot;null&quot;, &quot;name&quot;, &quot;null&quot;]</key>
                     <delay>3600</delay>
-                    <status>1</status>
+                    <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
@@ -683,7 +683,7 @@ vSphere host: {$VSPHERE.HOST}</description>
                         <host_prototype>
                             <host>{#VSPHERE.HOST.NAME}</host>
                             <name>{#VSPHERE.HOST.NAME}</name>
-                            <status>1</status>
+                            <status>0</status>
                             <group_links>
                                 <group_link>
                                     <group>
@@ -707,7 +707,7 @@ vSphere host: {$VSPHERE.HOST}</description>
                     <snmp_oid/>
                     <key>vpoller[&quot;vm.discover&quot;, &quot;{HOST.HOST}&quot;, &quot;null&quot;, &quot;name&quot;, &quot;null&quot;]</key>
                     <delay>3600</delay>
-                    <status>1</status>
+                    <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
@@ -735,7 +735,7 @@ vSphere host: {$VSPHERE.HOST}</description>
                         <host_prototype>
                             <host>{#VSPHERE.VM.NAME}</host>
                             <name>{#VSPHERE.VM.NAME}</name>
-                            <status>1</status>
+                            <status>0</status>
                             <group_links>
                                 <group_link>
                                     <group>
@@ -759,7 +759,7 @@ vSphere host: {$VSPHERE.HOST}</description>
                     <snmp_oid/>
                     <key>vpoller[&quot;session.get&quot;, &quot;{HOST.HOST}&quot;, &quot;null&quot;, &quot;null&quot;, &quot;null&quot;]</key>
                     <delay>5</delay>
-                    <status>1</status>
+                    <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
@@ -791,7 +791,7 @@ vSphere host: {$VSPHERE.HOST}</description>
                             <delay>5</delay>
                             <history>1</history>
                             <trends>365</trends>
-                            <status>1</status>
+                            <status>0</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -840,7 +840,7 @@ vSphere host: {$VSPHERE.HOST}</description>
             <expression>{Template VMware vSphere - vPoller Native:icmpping[{HOST.NAME},3,,,].min(5)}#1</expression>
             <name>vSphere host {HOST.NAME} is unreachable for 5 minutes</name>
             <url/>
-            <status>1</status>
+            <status>0</status>
             <priority>4</priority>
             <description/>
             <type>0</type>

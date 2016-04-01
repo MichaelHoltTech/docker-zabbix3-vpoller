@@ -53,7 +53,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -96,7 +96,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -139,7 +139,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -182,7 +182,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>30</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -228,7 +228,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>30</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>Hz</units>
@@ -274,7 +274,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>30</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -320,7 +320,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -366,7 +366,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -412,7 +412,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>30</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -458,7 +458,7 @@
                     <delay>5</delay>
                     <history>7</history>
                     <trends>30</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -501,7 +501,7 @@
                     <delay>5</delay>
                     <history>7</history>
                     <trends>30</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>Bps</units>
@@ -547,7 +547,7 @@
                     <delay>5</delay>
                     <history>7</history>
                     <trends>30</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>Bps</units>
@@ -593,7 +593,7 @@
                     <delay>5</delay>
                     <history>7</history>
                     <trends>30</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>Hz</units>
@@ -639,7 +639,7 @@
                     <delay>5</delay>
                     <history>7</history>
                     <trends>30</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>B</units>
@@ -685,7 +685,7 @@
                     <delay>5</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -728,7 +728,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>30</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>B</units>
@@ -774,7 +774,7 @@
                     <delay>5</delay>
                     <history>7</history>
                     <trends>30</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>0</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -817,7 +817,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -860,7 +860,7 @@
                     <delay>5</delay>
                     <history>7</history>
                     <trends>30</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>Hz</units>
@@ -906,7 +906,7 @@
                     <delay>5</delay>
                     <history>7</history>
                     <trends>30</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>B</units>
@@ -952,7 +952,7 @@
                     <delay>5</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -995,7 +995,7 @@
                     <delay>5</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -1038,7 +1038,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -1081,7 +1081,7 @@
                     <delay>5</delay>
                     <history>7</history>
                     <trends>30</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>uptime</units>
@@ -1124,7 +1124,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -1167,7 +1167,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -1210,7 +1210,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -1253,7 +1253,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -1296,7 +1296,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -1339,7 +1339,7 @@
                     <delay>3600</delay>
                     <history>7</history>
                     <trends>365</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>1</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -1381,7 +1381,7 @@
                     <snmp_oid/>
                     <key>vpoller[&quot;host.perf.metric.info&quot;, &quot;{$VSPHERE.HOST}&quot;, &quot;{HOST.HOST}&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;net.received.kiloBytesPerSecond.average&quot;, &quot;&quot;, &quot;&quot;]</key>
                     <delay>3600</delay>
-                    <status>1</status>
+                    <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
@@ -1413,7 +1413,7 @@
                             <delay>5</delay>
                             <history>7</history>
                             <trends>30</trends>
-                            <status>1</status>
+                            <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>Bps</units>
@@ -1459,7 +1459,7 @@
                             <delay>5</delay>
                             <history>7</history>
                             <trends>30</trends>
-                            <status>1</status>
+                            <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>Bps</units>
@@ -1552,7 +1552,7 @@
                     <snmp_oid/>
                     <key>vpoller[&quot;host.datastore.get&quot;, &quot;{$VSPHERE.HOST}&quot;, &quot;{HOST.HOST}&quot;, &quot;null&quot;, &quot;null&quot;]</key>
                     <delay>3600</delay>
-                    <status>1</status>
+                    <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
@@ -1584,7 +1584,7 @@
                             <delay>3600</delay>
                             <history>7</history>
                             <trends>365</trends>
-                            <status>1</status>
+                            <status>0</status>
                             <value_type>1</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -1629,7 +1629,7 @@
                     <snmp_oid/>
                     <key>vpoller[&quot;host.vm.get&quot;, &quot;{$VSPHERE.HOST}&quot;, &quot;{HOST.HOST}&quot;, &quot;null&quot;, &quot;null&quot;]</key>
                     <delay>3600</delay>
-                    <status>1</status>
+                    <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
@@ -1661,7 +1661,7 @@
                             <delay>3600</delay>
                             <history>7</history>
                             <trends>365</trends>
-                            <status>1</status>
+                            <status>0</status>
                             <value_type>1</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -1710,7 +1710,7 @@
             <expression>{Template VMware vSphere Hypervisor - vPoller Native:vpoller[&quot;host.get&quot;, &quot;{$VSPHERE.HOST}&quot;, &quot;{HOST.HOST}&quot;, &quot;summary.quickStats.overallCpuUsagePercentage&quot;, &quot;null&quot;].min(5)}&gt;90</expression>
             <name>High CPU utilization on host {HOST.NAME}</name>
             <url/>
-            <status>1</status>
+            <status>0</status>
             <priority>2</priority>
             <description>High CPU utilization on host {HOST.NAME}&#13;
 &#13;
@@ -1724,7 +1724,7 @@ vSphere Host: {$VSPHERE.HOST}</description>
             <expression>{Template VMware vSphere Hypervisor - vPoller Native:vpoller[&quot;host.get&quot;, &quot;{$VSPHERE.HOST}&quot;, &quot;{HOST.HOST}&quot;, &quot;summary.quickStats.overallMemoryUsagePercentage&quot;, &quot;null&quot;].min(5)}&gt;90</expression>
             <name>High memory usage on host {HOST.NAME}</name>
             <url/>
-            <status>1</status>
+            <status>0</status>
             <priority>2</priority>
             <description>High memory usage on {HOST.NAME} &#13;
 &#13;
@@ -1738,7 +1738,7 @@ vSphere Host: {$VSPHERE.HOST}</description>
             <expression>{Template VMware vSphere Hypervisor - vPoller Native:vpoller[&quot;host.get&quot;, &quot;{$VSPHERE.HOST}&quot;, &quot;{HOST.HOST}&quot;, &quot;runtime.inMaintenanceMode&quot;, &quot;null&quot;].iregexp(true,5)}=1</expression>
             <name>Host {HOST.NAME} is in maintenance mode</name>
             <url/>
-            <status>1</status>
+            <status>0</status>
             <priority>1</priority>
             <description>Host {HOST.NAME} is in maintenance mode&#13;
 &#13;
@@ -1751,7 +1751,7 @@ vSphere Host: {$VSPHERE.HOST}</description>
             <expression>{Template VMware vSphere Hypervisor - vPoller Native:vpoller[&quot;host.get&quot;, &quot;{$VSPHERE.HOST}&quot;, &quot;{HOST.HOST}&quot;, &quot;runtime.powerState&quot;, &quot;null&quot;].iregexp(poweredOff,5)}=1</expression>
             <name>Host {HOST.NAME} is powered off</name>
             <url/>
-            <status>1</status>
+            <status>0</status>
             <priority>1</priority>
             <description>Host {HOST.NAME} is powered off&#13;
 &#13;
@@ -1764,7 +1764,7 @@ vSphere Host: {$VSPHERE.HOST}</description>
             <expression>{Template VMware vSphere Hypervisor - vPoller Native:vpoller[&quot;host.get&quot;, &quot;{$VSPHERE.HOST}&quot;, &quot;{HOST.HOST}&quot;, &quot;summary.overallStatus&quot;, &quot;null&quot;].iregexp(red,5)}=1</expression>
             <name>Overall status of {HOST.NAME} is {ITEM.LASTVALUE}</name>
             <url/>
-            <status>1</status>
+            <status>0</status>
             <priority>4</priority>
             <description/>
             <type>0</type>
@@ -1774,7 +1774,7 @@ vSphere Host: {$VSPHERE.HOST}</description>
             <expression>{Template VMware vSphere Hypervisor - vPoller Native:vpoller[&quot;host.get&quot;, &quot;{$VSPHERE.HOST}&quot;, &quot;{HOST.HOST}&quot;, &quot;summary.rebootRequired&quot;, &quot;null&quot;].iregexp(true,5)}=1</expression>
             <name>Reboot required for host {HOST.NAME}</name>
             <url/>
-            <status>1</status>
+            <status>0</status>
             <priority>1</priority>
             <description>Reboot is required for host {HOST.NAME}&#13;
 &#13;

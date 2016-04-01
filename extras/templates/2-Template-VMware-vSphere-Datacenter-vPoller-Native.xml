@@ -35,7 +35,7 @@
                     <delay>86400</delay>
                     <history>1</history>
                     <trends>7</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -78,7 +78,7 @@
                     <delay>86400</delay>
                     <history>1</history>
                     <trends>7</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -121,7 +121,7 @@
                     <delay>86400</delay>
                     <history>1</history>
                     <trends>7</trends>
-                    <status>1</status>
+                    <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -163,7 +163,7 @@
                     <snmp_oid/>
                     <key>vpoller[&quot;datacenter.alarm.get&quot;, &quot;{$VSPHERE.HOST}&quot;, &quot;{HOST.HOST}&quot;, &quot;null&quot;]</key>
                     <delay>5</delay>
-                    <status>1</status>
+                    <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
@@ -195,7 +195,7 @@
                             <delay>5</delay>
                             <history>1</history>
                             <trends>365</trends>
-                            <status>1</status>
+                            <status>0</status>
                             <value_type>1</value_type>
                             <allowed_hosts/>
                             <units/>
@@ -234,7 +234,7 @@
                             <expression>{Template VMware vSphere Datacenter - vPoller Native:vpoller.echo[&quot;{#VSPHERE.DATACENTER.ALARM.OVERALLSTATUS}&quot;, &quot;{#VSPHERE.DATACENTER.ALARM.KEY}&quot;].iregexp(yellow,5)}=1</expression>
                             <name>{#VSPHERE.DATACENTER.ALARM.ENTITY} alarm: {#VSPHERE.DATACENTER.ALARM.INFO}</name>
                             <url/>
-                            <status>1</status>
+                            <status>0</status>
                             <priority>2</priority>
                             <description/>
                             <type>0</type>
@@ -243,7 +243,7 @@
                             <expression>{Template VMware vSphere Datacenter - vPoller Native:vpoller.echo[&quot;{#VSPHERE.DATACENTER.ALARM.OVERALLSTATUS}&quot;, &quot;{#VSPHERE.DATACENTER.ALARM.KEY}&quot;].iregexp(red,5)}=1</expression>
                             <name>{#VSPHERE.DATACENTER.ALARM.ENTITY} alarm: {#VSPHERE.DATACENTER.ALARM.INFO}</name>
                             <url/>
-                            <status>1</status>
+                            <status>0</status>
                             <priority>4</priority>
                             <description/>
                             <type>0</type>
