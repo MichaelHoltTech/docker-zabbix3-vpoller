@@ -1,13 +1,24 @@
 #!/bin/sh
 
-sleep 60
-echo "Initial Run in 1 minute"
-zabbix-vsphere-import -f /config/vsphere-import.yaml
-echo "Next Run in 15 minutes"
-sleep 900
-while [ true ]
-do
-    zabbix-vsphere-import -f /config/vsphere-import.yaml
-    echo "Next Run in 15 minutes"
-    sleep 900
-done
+if [ ! -z "$ZB_UN" ]
+then
+  sleep 60
+  echo "Initial Run in 1 minute"
+  zabbix-vsphere-import -f /config/vsphere-import.yaml
+  echo "Next Run in 15 minutes"
+  sleep 900
+  while [ true ]
+  do
+      zabbix-vsphere-import -f /config/vsphere-import.yaml
+      echo "Next Run in 15 minutes"
+      sleep 900
+  done
+else
+  echo "Zabbix Username not set, not running import"
+  sleep 900
+  while [ true ]
+  do
+      echo "Zabbix Username not set, not running import"
+      sleep 900
+  done
+fi
