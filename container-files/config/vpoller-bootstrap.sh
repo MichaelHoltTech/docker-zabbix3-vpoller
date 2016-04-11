@@ -6,6 +6,8 @@ vconnector-cli init
 vconnector-cli -H ${VS_HOST} -U ${VS_UN} -P ${VS_PW} add
 vconnector-cli -H ${VS_HOST} enable
 
+export ZS_Include=/usr/local/etc/zabbix_server.conf.d/*.conf
+
 if [ ! -z "$ZB_UN" ]
 then
   cp /config/vsphere-import.yaml.tpl /config/vsphere-import.yaml
