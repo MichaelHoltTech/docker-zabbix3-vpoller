@@ -18,27 +18,39 @@ RUN \
     ./autogen.sh && \
     ./configure && \
     make && make install && make clean && \
-    ldconfig
+    ldconfig && \
+    git clone --no-checkout https://github.com/dnaeon/py-vpoller /usr/local/src/vpoller-cclient && \
+    cd /usr/local/src/vpoller-cclient && \
+    git config core.sparseCheckout true && \
+    echo "extra/vpoller-cclient*"> .git/info/sparse-checkout && \
+    git checkout master && \
+    mv extra/vpoller-cclient/* . && \
+    rm -Rf extra && \
+    cd /usr/local/src/vpoller-cclient && \
+    make && \
+    mv vpoller-cclient /usr/local/bin && \
+    chmod +x /usr/local/bin/vpoller-cclient
+
 
 # Layer: zabbix-vpoller
 RUN \
-    git clone --no-checkout https://github.com/dnaeon/py-vpoller /usr/local/src/vpoller-module && \
-    cd /usr/local/src/vpoller-module && \
-    git config core.sparseCheckout true && \
-    echo "extra/zabbix/vpoller-module*"> .git/info/sparse-checkout && \
-    git checkout master && \
-    mv extra/zabbix/vpoller-module/* . && \
-    rm -Rf extra && \
-    export ZABBIX_SF_VERSION="$(echo ${ZABBIX_VERSION} | cut -d/ -f2)" && \
-    cd /usr/local/src/ && \
-    tar xvfz zabbix-${ZABBIX_SF_VERSION}.tar.gz && \
-    cd zabbix-${ZABBIX_SF_VERSION} && \
-    ./configure && \
-    cp -a /usr/local/src/vpoller-module src/modules && \
-    cd src/modules/vpoller-module && \
-    make && \
-    cp vpoller.so /usr/local/src/vpoller-module && \
-    cd /usr/local/src/ && \
+    #git clone --no-checkout https://github.com/dnaeon/py-vpoller /usr/local/src/vpoller-module && \
+    #cd /usr/local/src/vpoller-module && \
+    #git config core.sparseCheckout true && \
+    #echo "extra/zabbix/vpoller-module*"> .git/info/sparse-checkout && \
+    #git checkout master && \
+    #mv extra/zabbix/vpoller-module/* . && \
+    #rm -Rf extra && \
+    #export ZABBIX_SF_VERSION="$(echo ${ZABBIX_VERSION} | cut -d/ -f2)" && \
+    #cd /usr/local/src/ && \
+    #tar xvfz zabbix-${ZABBIX_SF_VERSION}.tar.gz && \
+    #cd zabbix-${ZABBIX_SF_VERSION} && \
+    #./configure && \
+    #cp -a /usr/local/src/vpoller-module src/modules && \
+    #cd src/modules/vpoller-module && \
+    #make && \
+    #cp vpoller.so /usr/local/src/vpoller-module && \
+    #cd /usr/local/src/ && \
     export ZS_LoadModule=vpoller.so && \
     rm -Rf zabbix-${ZABBIX_SF_VERSION} zabbix-${ZABBIX_SF_VERSION}.tar.gz
 
