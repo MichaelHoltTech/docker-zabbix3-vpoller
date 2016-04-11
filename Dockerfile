@@ -51,7 +51,8 @@ RUN \
     #make && \
     #cp vpoller.so /usr/local/src/vpoller-module && \
     #cd /usr/local/src/ && \
-    export ZS_LoadModule=vpoller.so && \
+    #export ZS_LoadModule=vpoller.so && \
+    export ZS_Include=/usr/local/etc/zabbix_server.conf.d/*.conf && \
     rm -Rf zabbix-${ZABBIX_SF_VERSION} zabbix-${ZABBIX_SF_VERSION}.tar.gz
 
 
