@@ -58,6 +58,8 @@ docker exec \
     bzip2 -cq9 > /backups/zabbix_db_dump_$(date +%Y-%m-%d-%H.%M.%S).sql.bz2"
 ```
 
+After starting Zabbix you must import the Configuration Templates located in extras/templates.  This can be done by logging into Zabbix (Admin/zabbix) and then going to configuration -> templates -> import
+
 #### Environmental variables
 You can use environmental variables to config Zabbix and Zabbix web UI (PHP). Available
 variables:
