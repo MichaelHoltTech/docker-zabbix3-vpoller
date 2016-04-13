@@ -19,7 +19,7 @@ RUN \
   sudo add-apt-repository ppa:openjdk-r/ppa && \
   sudo apt-get update && \
   apt-get dist-upgrade -y && \
-  apt-get install \
+  apt-get install -y \
           wget subversion nginx inotify-tools php5-fpm \
           php5-gd php5-cli php5-mysqlnd php5-snmp php5-ldap \
           gcc build-essential nano pkg-config fping libaio1 \
