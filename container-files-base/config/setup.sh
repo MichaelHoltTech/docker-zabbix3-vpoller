@@ -22,13 +22,12 @@ apt-get install -y \
         libssh2-1-dev libopenipmi-dev libcurl4-openssl-dev \
         libmysqld-dev openjdk-8-jdk ruby python-pip python3-pip
 svn co svn://svn.zabbix.com/tags/3.0.1 /usr/local/src/zabbix
-cd /usr/local/src/zabbix
 DATE=`date +%Y-%m-%d`
-sed -i "s/ZABBIX_VERSION.*'\(.*\)'/ZABBIX_VERSION', '\1 ($DATE)'/g" frontends/php/include/defines.inc.php
-sed -i "s/ZABBIX_VERSION_RC.*\"\(.*\)\"/ZABBIX_VERSION_RC \"\1 (${DATE})\"/g" include/version.h
-sed -i "s/String VERSION =.*\"\(.*\)\"/String VERSION = \"\1 (${DATE})\"/g" src/zabbix_java/src/com/zabbix/gateway/GeneralInformation.java
-./bootstrap
-./configure --enable-server --enable-agent --with-mysql --enable-java \
+sed -i "s/ZABBIX_VERSION.*'\(.*\)'/ZABBIX_VERSION', '\1 ($DATE)'/g" /usr/local/src/zabbixfrontends/php/include/defines.inc.php
+sed -i "s/ZABBIX_VERSION_RC.*\"\(.*\)\"/ZABBIX_VERSION_RC \"\1 (${DATE})\"/g" /usr/local/src/zabbixinclude/version.h
+sed -i "s/String VERSION =.*\"\(.*\)\"/String VERSION = \"\1 (${DATE})\"/g" /usr/local/src/zabbixsrc/zabbix_java/src/com/zabbix/gateway/GeneralInformation.java
+/usr/local/src/zabbix/usr/local/src/zabbix/bootstrap
+/usr/local/src/zabbix/configure --enable-server --enable-agent --with-mysql --enable-java \
             --with-net-snmp --with-libcurl --with-libxml2 --with-openipmi \
             --enable-ipv6 --with-jabber --with-openssl --with-ssh2 \
             --with-ldap --with-unixodbc
