@@ -16,9 +16,9 @@ COPY container-files-zabbix /
 
 # Get Zabbix built from Source
 RUN \
-  export DEBIAN_FRONTEND=noninteractive
-  echo force-unsafe-io > /etc/dpkg/dpkg.cfg.d/02apt-speedup
-  echo "#!/bin/sh\nexit 0" > /usr/sbin/policy-rc.d
+  export DEBIAN_FRONTEND=noninteractive && \
+  echo force-unsafe-io > /etc/dpkg/dpkg.cfg.d/02apt-speedup && \
+  echo "#!/bin/sh\nexit 0" > /usr/sbin/policy-rc.d && \
   sudo add-apt-repository ppa:openjdk-r/ppa && \
   sudo apt-get update && \
   apt-get dist-upgrade -y && \
