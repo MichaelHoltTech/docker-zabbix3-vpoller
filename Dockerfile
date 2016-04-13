@@ -26,7 +26,7 @@ RUN \
           libdbd-mysql-perl libdbi-perl libhtml-template-perl \
           libiksemel3 libltdl7 libmysqlclient18 libodbc1 \
           libopenipmi0 libssh2-1 snmpd mysql-client \
-          mysql-client-5.5 mysql-client-core-5 mysql-common \
+          mysql-client-5.5 mysql-client-core-5.5 mysql-common \
           git-core libxml2-dev libxslt-dev mysql-client \
           libmysqlclient-dev python-dev python-setuptools \
           swig python-imaging python-m2crypto gettext \
